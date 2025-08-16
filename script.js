@@ -540,7 +540,7 @@ lovePopup.addEventListener('click', (e)=>{
 // Access control logic
 // Access control logic with live countdown update
 (function(){
-  const unlockDate = new Date(2025,7,16,0,48,0); // 17 Aug 2025 (month is 0-based)
+  const unlockDate = new Date(2025,7,17,0,48,0); // 17 Aug 2025 (month is 0-based)
   const overlay = document.getElementById('accessOverlay');
   const mainContent = document.getElementById('card');
   function pad(n){ return n<10?'0'+n:n; }
@@ -870,3 +870,4 @@ function playLoveAnimation() {
     closeLove();
   }, 7000);
 }
+
