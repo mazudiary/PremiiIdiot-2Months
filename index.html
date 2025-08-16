@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>2 Months — Premii & Idiot😘💖</title>
+<link rel="icon" type="image/png" href="images/premii_idiot.png" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+  <!-- html2canvas for screenshotting -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <div id="accessOverlay" style="position:fixed;inset:0;z-index:3000;background:linear-gradient(120deg,#ff9a9e,#fecfef);display:flex;align-items:center;justify-content:center;flex-direction:column;"></div>
+  <div id="unlockAnimation" style="display:none;position:fixed;inset:0;z-index:3500;background:linear-gradient(120deg,#ff9a9e,#fecfef);align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+    <canvas id="unlockHearts" style="position:absolute;inset:0;width:100vw;height:100vh;pointer-events:none;"></canvas>
+  <div id="glowNames" style="position:relative;z-index:2;display:none;font-size:2.2rem;font-weight:800;color:#fff;text-shadow:0 0 18px #ff6bcb,0 0 32px #ffb6e6,0 2px 8px #fff;letter-spacing:2px;margin-bottom:24px;"></div>
+  <div id="unlockPoem" style="display:none;position:relative;z-index:2;font-size:1.3rem;font-weight:600;color:#fff;text-shadow:0 0 10px #e14fa1,0 0 18px #ffb6e6;max-width:90vw;margin:0 auto 0 auto;line-height:1.7;"></div>
+  </div>
+  <div class="card" id="card" style="display:none;">
+    <div class="heart-layer" id="heartLayer"></div>
+
+    <div class="title">
+      <div class="logo" style="position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+        <img id="mainLoveImage" src="images/premii_idiot.png" alt="Premii & Idiot Logo" style="width:72px;height:72px;object-fit:cover;border-radius:50%;box-shadow:0 6px 22px rgba(251,115,178,0.18), inset 0 -6px 18px rgba(255,255,255,0.6);border:3px solid rgba(255,255,255,0.6);background:linear-gradient(135deg,#fff4fb,#ffeef8);" />
+      </div>
+
+      <div>
+        <h1>Happy 2 Month Love Journey — <span class="pulse-heart">Premii 💓 Idiot😘💖</span></h1>
+        <div class="subtitle">Celebrating the sweetest beginning every adda, every "I love you", "Valobashiii", and every little nickname.</div>
+        <div class="names" aria-hidden="true">
+          <div class="name-pill">Premii</div>
+          <div class="name-pill">Shokher Narii</div>
+          <div class="name-pill">Partner</div>
+          <div class="name-pill">Dreamy Sweetest Gifty Queen</div>
+          <div class="name-pill">Wiffeey</div>
+          <div class="name-pill">— &nbsp; Idiot | Jamai | Husband</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="flex">
+      <div class="panel" style="min-width:260px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div class="muted">Since</div>
+            <div style="margin-top:6px;"> <strong>17 June 2025</strong> <span class="muted" style="font-weight:600">∙ 12:48 AM</span></div>
+          </div>
+          <div style="text-align:right">
+            <div class="muted">Time together</div>
+            <div class="big-number" id="monthsText">0 months</div>
+            <div class="muted" id="daysText">0 days</div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="muted">Milestones & Timeline</div>
+        <div class="timeline" id="timeline" style="margin-top:12px;">
+          <!-- timeline items inserted by JS -->
+        </div>
+
+        <div class="cta">
+          <button class="btn" id="celebrateBtn">Celebrate 🎉</button>
+          <button class="btn-ghost" id="toggleNames">Toggle Cute Titles</button>
+        </div>
+
+        <div class="message" id="message">
+          Loading your sweet story... 💌
+        </div>
+
+        <!-- Promises Section -->
+        <section class="promises" style="margin:32px 0 0 0;">
+          <h2 style="text-align:center;font-size:22px;color:#e14fa1;margin-bottom:10px;">💍 My Promises to You</h2>
+          <ul style="max-width:420px;margin:0 auto 18px auto;padding:0 0 0 18px;font-size:16px;color:#b82e7c;line-height:1.7;font-weight:600;">
+            <li>I try my best for your happiness and peace</li>
+            <li>I will care for you all the time</li>
+            <li>I will support you at any time</li>
+            <li>I will love you till my last breath</li>
+          </ul>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section class="love-letter" style="margin:32px 0 0 0;">
+          <h2 style="text-align:center;font-size:22px;color:#b82e7c;margin-bottom:10px;">💌 A Letter for You</h2>
+          <div style="max-width:540px;margin:0 auto;background:linear-gradient(135deg,#fff6fb 80%,#ffeef8 100%);border-radius:18px;padding:24px 22px 20px 22px;box-shadow:0 4px 24px rgba(255,107,203,0.08);color:#7a5b6b;font-size:17px;line-height:1.8;font-weight:500;">
+            In this vast world, you are my sweetest happiness.<br><br>
+            The grand moments when we hold each other close or whisper about our dreams feel like chapters from the most beautiful love story.<br>
+            And the small moments the gentle curve of your smile, the warmth in your eyes are little sparks of magic that light up my heart.<br><br>
+            With you, every heartbeat feels like a poem.<br>
+            I love you beyond time, beyond reason, beyond forever...<span style="font-size:20px;color:#e14fa1">😘💖</span>
+          </div>
+        </section>
+        <!-- Reminder Section -->
+        <section class="reminder" style="margin:32px 0 0 0;">
+          <h2 style="text-align:center;font-size:20px;color:#e14fa1;margin-bottom:10px;">🔔 Reminder</h2>
+          <div style="max-width:480px;margin:0 auto;background:linear-gradient(135deg,#fff6fb 80%,#ffeef8 100%);border-radius:16px;padding:18px 18px 16px 18px;box-shadow:0 4px 18px rgba(255,107,203,0.08);color:#b82e7c;font-size:18px;line-height:1.8;font-weight:600;text-align:center;font-family:'Noto Sans Bengali','Poppins',sans-serif;">
+            আমার শখের নারী তোমার ক্ষুদ্রতম "যত্নও"<br>
+            আমার পাহাড়সম দুঃখ কষ্টকে সুখে পরিণত করার ক্ষমতা রাখে
+          </div>
+        </section>
+      </div>
+
+      <div class="panel" style="max-width:420px">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+          <div style="font-size:28px;">✨</div>
+          <div>
+            <div class="muted">A little love note</div>
+            <div style="font-weight:700; font-size:16px; margin-top:4px">For my Premii, My Shokher Nari, My Beautiful Dreamy Gifty Sweetest Queen.</div>
+          </div>
+        </div>
+
+        <p class="note">My heart remembers meeting you at Omor Ekhushe Boi Mela (14 Feb 2020) that day started everything. From our first adda on 21 Feb 2020, to the moment you said "I love you" on 17 June 2025 every memory is a small forever.</p>
+
+        <div class="line"></div>
+
+        <div style="margin-top:12px;">
+          <div class="muted">Quick actions</div>
+          <div style="display:flex; gap:10px; margin-top:10px;">
+            <button class="btn" id="downloadPNG">Save as Image</button>
+            <button class="btn-ghost" id="shareBtn">Copy message</button>
+            <button class="btn" id="showLovePoem" style="background:linear-gradient(90deg,#ff6bcb,#ffb86c);color:#fff;font-weight:800;">Show Love Poem</button>
+          </div>
+        </div>
+        
+        <!-- Memories -->
+        <section class="memories">
+          <h2>📸 Our Sweet Memories</h2>
+          <p class="mem-desc">Every smile, hug & silly selfie — stored in my heart 😘💖</p>
+          <div class="memory-grid">
+            <div class="memory-item" data-type="image" data-src="./images/1st_meet.webp">
+              <img src="./images/1st_meet.webp" alt="First Meet">
+              <span>14 Feb 2020 । First Meet 💖</span>
+            </div>
+            <div class="memory-item" data-type="image" data-src="./images/2nd_meet.webp">
+              <img src="./images/2nd_meet.webp" alt="First Adda">
+              <span>21 Feb 2020 । First Adda ☕</span>
+            </div>
+
+            <div class="memory-item" data-type="image" data-src="./images/1st_date.webp">
+              <img src="./images/1st_date.webp" alt="First Date">
+              <span>1 July 2025 । First Date 💖</span>
+            </div>
+            <div class="memory-item" data-type="image" data-src="./images/2nd_date.webp">
+              <img src="./images/2nd_date.webp" alt="Second Date">
+              <span>18 July 2025 । Second Date 💖</span>
+            </div>
+            <div class="memory-item" data-type="image" data-src="./images/3rd_date.webp">
+              <img src="./images/3rd_date.webp" alt="Third Date">
+              <span>19 July 2025 । Third Date 💖</span>
+            </div>
+            <div class="memory-item" data-type="image" data-src="./images/4th_date.webp">
+              <img src="./images/4th_date.webp" alt="Fourth Date">
+              <span>27 July 2025 । Fourth Date 💖</span>
+            </div>
+            <div class="memory-item" data-type="image" data-src="./images/5th_date.webp">
+              <img src="./images/5th_date.webp" alt="Fifth Date">
+              <span>02 Aug 2025 । Fifth Date 💖</span>
+            </div>
+            <div class="memory-item" data-type="image" data-src="./images/6th_date.webp">
+              <img src="./images/6th_date.webp" alt="Sixth Date">
+              <span>07 Aug 2025 । Sixth Date 💖</span>
+            </div>
+            <div class="memory-item" data-type="video" data-src="./videos/laugh.mp4">
+              <video src="./videos/laugh.mp4"></video>
+              <span>Beautiful Together 😄</span>
+            </div>
+          </div>
+
+        </section>
+    
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">×</span>
+        <canvas class="heart-canvas" id="heartCanvas"></canvas>
+        <div class="lightbox-content" id="lightboxContent"></div>
+
+        </div>
+
+        <!-- Custom Popup Modal -->
+        <div id="customPopup" style="display:none;position:fixed;inset:0;z-index:4000;background:rgba(255,107,203,0.13);align-items:center;justify-content:center;">
+        <div id="customPopupBox" style="background:linear-gradient(135deg,#fff6fb 80%,#ffeef8 100%);border-radius:22px;box-shadow:0 8px 40px rgba(255,107,203,0.18);padding:38px 28px 28px 28px;min-width:280px;max-width:90vw;max-height:80vh;position:relative;text-align:center;border:2px solid #ffb6e6;animation:popIn 0.3s;display:flex;flex-direction:column;align-items:center;">
+            <span id="customPopupClose" style="position:absolute;top:12px;right:22px;font-size:28px;color:#ff6bcb;cursor:pointer;font-weight:bold;z-index:2;transition:color 0.2s;">×</span>
+            <div id="customPopupIcon" style="font-size:38px;margin-bottom:10px;">💖</div>
+            <div id="customPopupMsg" style="font-size:18px;color:#b82e7c;font-weight:600;line-height:1.6;"></div>
+            <div id="customPopupInputWrap" style="margin-top:18px;display:none;width:100%;">
+            <input id="customPopupInput" style="font-size:17px;padding:10px 16px;border-radius:10px;border:2px solid #ffb6e6;background:#fff6fb;color:#b82e7c;font-weight:600;width:100%;max-width:260px;outline:none;" />
+            </div>
+            <div style="margin-top:22px;display:flex;gap:16px;justify-content:center;">
+            <button id="customPopupOk" class="btn" style="min-width:80px;">OK</button>
+            <button id="customPopupCancel" class="btn-ghost" style="min-width:80px;display:none;">Cancel</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Romantic Modal -->
+        <div id="loveModal" class="love-modal">
+          <div class="love-modal-content">
+            <span id="closeLoveModal">&times;</span>
+            <img src="images/premii_idiot.png" alt="Premii & Idiot" />
+            <div class="love-caption">
+              <span id="loveText"></span>
+            </div>
+            <div class="hearts-container"></div>
+            <div class="sparkles"></div>
+          </div>
+        </div>
+
+
+
+        <!-- Wedding Proposal Rings -->
+        <div class="rings-animation">
+          <div class="ring left-ring"></div>
+          <div class="ring right-ring"></div>
+          <div class="sparkle"></div>
+        </div>
+        <div class="proposal-text" id="proposalText"></div>
+
+
+
+        <!-- Love Poem Popup -->
+        <div class="love-popup" id="lovePopup" style="display:none;">
+        <div class="love-popup-content">
+            <span class="love-popup-close" id="lovePopupClose">×</span>
+            <div class="love-popup-inner">
+            <div class="love-poem-bn">ভালোবাসি ভালোবাসা, ভালোবাসা ভালোবাসি<br>ভালোবাসার ভালোবাসা ভালোবাসি</div>
+            <div class="love-poem-en">Loveee, oh my loveee<br>Loveee and only loveee<br>The loveee of my loveee, the deepest loveee</div>
+            </div>
+        </div>
+        </div>
+
+        <footer>
+          <div>Made with lots of love for you my mine...😘💖</div>
+          <div style="margin-top:6px;font-size:12px;color:#7e4b63">Start: 17 Jun 2025 · First meet: 14 Feb 2020</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
